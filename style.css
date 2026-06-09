@@ -247,3 +247,33 @@ margin-bottom:15px;
 .contact-card a:hover{
     transform:scale(1.05);
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* Tampilan HP */
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav ul{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        right:20px;
+        width:220px;
+        background:#161b22;
+        border-radius:15px;
+        padding:20px;
+        gap:15px;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+}
